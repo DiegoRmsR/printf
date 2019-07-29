@@ -9,7 +9,7 @@
 int print_integer(va_list list)
 {
 unsigned int sig, cont, num, dig, div, x;
-unsigned int n = va_arg(list, int);
+int n = va_arg(list, int);
 
 	cont = 1;
 	dig = 1;
