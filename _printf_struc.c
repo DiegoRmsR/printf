@@ -29,5 +29,11 @@ print pf[] = {
 		}
 		i++;
 	}
+		if (pf[0].format[0] != identifier)
+		{
+			_putchar('%');
+			_putchar(identifier);
+			return (2);
+		}
 	return (0);
 }
