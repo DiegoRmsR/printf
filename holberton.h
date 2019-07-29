@@ -1,5 +1,5 @@
-#ifndef _HOLBERTON_H
-#define _HOLBERTON_H
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
@@ -25,9 +25,8 @@ int print_porcent(va_list list);
 int print_integer(va_list list);
 int print_base2(unsigned int n, int length);
 int print_binary(va_list list);
-int print_unsint(va_list list);
 int print_base8(unsigned int n, int length);
 int print_octal(va_list list);
-int print_hexa(va_list list);
+
 
 #endif
