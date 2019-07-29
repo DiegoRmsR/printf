@@ -37,5 +37,7 @@ int n = va_arg(list, int);
 	dig = dig / 10;
 	_putchar (div + '0');
 	}
+	if (n < 0)
+		return (cont + 1);
 	return (cont);
 }
