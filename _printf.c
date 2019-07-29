@@ -17,6 +17,8 @@ int _printf(const char *format, ...)
 		{
 			if (format[i] == '%')
 			{
+				if (!format[i + 1])
+					return(-1);
 				length += get_print_func(format[i + 1], list);
 				i++;
 			}
