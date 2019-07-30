@@ -1,19 +1,20 @@
 #include "holberton.h"
+
 /**
-* print_R - prints a string in rot13
- * @R: string to print
+* print_Ror13 - print string in rot13
+ * @list: string to print size
  *
  * Return: number of chars printed
 */
-int print_R(va_list list)
+int print_Rot13(va_list list)
 {
-	int i, j;
+	unsigned int i, j;
 	char *str;
-	unsigned int count = 0;
+	int count = 0;
 	char alfabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char rot13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
 
-	str = va_arg(R char*);
+	str = va_arg(list, char*);
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -21,14 +22,14 @@ int print_R(va_list list)
 		{
 			if (str[i] == alfabet[j])
 			{
-				_putchar(rot13[j];)
+				_putchar(rot13[j]);
 				count++;
 				break;
 			}
 		}
 		if (!alfabet[j])
 		{
-			_putchar(str[i])
+			_putchar(str[i]);
 			count++;
 		}
 	}
