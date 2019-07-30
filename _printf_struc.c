@@ -19,6 +19,7 @@ print pf[] = {
 	{"x", print_min_hexa},
 	{"X", print_hexa},
 	{"u", print_unsig},
+	{"R", print_Rot13},
 	{NULL, NULL}
 	};
 	int i = 0, length = 0;
