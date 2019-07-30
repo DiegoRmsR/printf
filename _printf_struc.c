@@ -20,6 +20,7 @@ print pf[] = {
 	{"X", print_hexa},
 	{"u", print_unsig},
 	{"R", print_Rot13},
+	{"r", print_rev},
 	{NULL, NULL}
 	};
 	int i = 0, length = 0;
