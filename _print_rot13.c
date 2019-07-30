@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
-* print_Ror13 - print string in rot13
+* print_Rot13 - print string in rot13
  * @list: string to print size
  *
  * Return: number of chars printed
