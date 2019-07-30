@@ -27,6 +27,9 @@ int print_base2(unsigned int n, int length);
 int print_binary(va_list list);
 int print_base8(unsigned int n, int length);
 int print_octal(va_list list);
-
+int print_base16min(unsigned int n, int length);
+int print_min_hexa(va_list list);
+int print_base16(unsigned int n, int length);
+int print_hexa(va_list list);
 
 #endif
