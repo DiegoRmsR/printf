@@ -18,6 +18,7 @@ print pf[] = {
 	{"o", print_octal},
 	{"x", print_min_hexa},
 	{"X", print_hexa},
+	{"u", print_unsig},
 	{NULL, NULL}
 	};
 	int i = 0, length = 0;
