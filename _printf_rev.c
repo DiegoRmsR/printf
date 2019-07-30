@@ -10,12 +10,13 @@ int print_rev(va_list list)
 	char *str;
 	unsigned int i = 0;
 	unsigned int j = 0;
-	unsigned int tmp;
-	unsigned int s;
+	unsigned int rev;
 	int count = 0;
 
 	str = va_arg(list, char*);
 
+	if (!str)
+		str = "(null)";
 	while (str[i] != '\0')
 	{
 		i++;
@@ -23,8 +24,8 @@ int print_rev(va_list list)
 
 	for (j = i; j > 0; j--)
 	{
-		tmp = str[j - 1];
-		_putchar(tmp);
+		rev = str[j - 1];
+		_putchar(rev);
 		count++;
 
 	}
