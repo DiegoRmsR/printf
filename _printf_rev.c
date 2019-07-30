@@ -16,6 +16,8 @@ int print_rev(va_list list)
 
 	str = va_arg(list, char*);
 
+	if (!str)
+		str = "(null)";
 	while (str[i] != '\0')
 	{
 		i++;
