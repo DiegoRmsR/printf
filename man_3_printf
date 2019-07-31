@@ -1,4 +1,4 @@
-.TH _PRINTF 1 "27 July 2019" "0.1" "_printf man page"
+.TH _PRINTF 3 "27 July 2019" "0.1" "_printf man page"
 .SH NAME
 .B _printf
 - format and print data.
@@ -27,9 +27,9 @@ On successful return, these functions return the number of characters printed, e
 
 FORMAT controls the output. Interpreted sequences are:
 .IP %c
-If no l modifier is present, the int argument is converted to an unsigned char, and the resulting character is written.
+The int argument is converted to an unsigned char, and the resulting character is written.
 .IP %s
-If no l modifier is present: The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
 .IP %d-i
 The int argument is converted to signed decimal notation. The precision, if any, gives the minimum number of digits that must appear
 .IP %%
