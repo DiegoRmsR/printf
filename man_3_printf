@@ -5,39 +5,61 @@
 .SH SYNOPSIS
 .I #include "holberton.h"
 .P
-.IR int _printf(const 
-.I char 
-*format, 
+.IR int _printf(const
+.I char
+*format,
 .B ...);
 .P
-.B _printf 
-.I FORMAT 
+.B _printf
+.I FORMAT
 .IR [ARGUMENT] ...
 .SH DESCRIPTION
 .B _Printf()
 .P
-Print 
-.B ARGUMENT(s) 
-according to the 
-.B FORMAT 
+Prints to standard output
+.B ARGUMENT(s)
+according to the
+.B FORMAT
 used
 .PP
+.SH Return value
+On successful return, these functions return the number of characters printed, excluding the null byte used to end output to strings.
+
 FORMAT controls the output. Interpreted sequences are:
 .IP %c
-Character
+If no l modifier is present, the int argument is converted to an unsigned char, and the resulting character is written.
 .IP %s
-String of characters
-.IP %d
-Signed decimal
-.IP %i
-Signed integer
-.IP %
-single percent
+If no l modifier is present: The const char * argument is expected to be a pointer to an array of character type (pointer to a string).
+.IP %d-i
+The int argument is converted to signed decimal notation. The precision, if any, gives the minimum number of digits that must appear
 .IP %%
-Double percent
+A '%' is written. No argument is converted. The complete conversion specification is '%%'.
+.IP %o-u-x-X
+The unsigned int argument is converted to unsigned octal (o), unsigned decimal (u), or unsigned hexadecimal (x and X) notation. The letters abcdef are used for x conversions; the letters ABCDEF are used for X conversions.
+.IP %R
+Prints a string converted to rot13
+.IP %r
+Prints a string in reverse.
+.SH EXAMPLE
+#include "holberton.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0
+ */
+int main(void)
+
+{
+
+        _printf("%c, %s %s, %i\\n", "H", "olberton", "school", "42");
+
+        return (0);
+
+}
 .SH SEE ALSO
-printf(1)
+printf(3)
 .SH BUGS
-No known bugs.
+No known bugs, if you find a bug contact 836@holbertonschool.com or 984@holbertonschool.com.
 .SH AUTHOR
-Diego Ramos, Juan Cortes.
+Diego Ramos - Juan Cortes.
