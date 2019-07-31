@@ -1,11 +1,11 @@
 # _printf function
 ------------
 
-
 Implementation of the function `printf` as a project for Holberton School. In this project we apply the knowledge that we have learned  in C programming language.
+
 ---
 ## Prototype
-`int_printf(const char *format, ...);`
+int_printf(const char *format, ...);
 ---
 ## Examples
 **String**
