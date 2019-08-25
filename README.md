@@ -57,6 +57,6 @@ File | Description
 `holberton.h` | header file
 ---
 ## Authors
-[Diego Ramos](https://github.com/DiegoRmsR) | [@DiegoRa24454355](https://twitter.com/DiegoRa24454355)
+[Diego Ramos](https://github.com/DiegoRmsR) | [@Imdiegoramoss](https://twitter.com/Imdiegoramoss)
 
 [Juan Cortes](https://github.com/JUCORTESA) | [@JUCORTESA](https://twitter.com/JUCORTESA)
